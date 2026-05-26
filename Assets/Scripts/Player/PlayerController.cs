@@ -96,6 +96,9 @@ public class PlayerController : NetworkBehaviour
     [Networked] private bool        recibiendoDano  { get; set; }
     [Networked] private int         saltosRestantes { get; set; }
     [Networked] private NetworkBool facingRight     { get; set; }
+    [Networked] private int         comboTrigger   { get; set; }
+    [Networked] private NetworkBool triggerConsumed { get; set; } 
+    [Networked] private float moveInput { get; set; }
 
     // ── Variables locales (no necesitan sincronización) ───────────────────────
     private Rigidbody2D    rb;
@@ -109,6 +112,8 @@ public class PlayerController : NetworkBehaviour
         rb             = GetComponent<Rigidbody2D>();
         animator       = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        comboTrigger = -1;
+        triggerConsumed = false;
 
         transform.position = new Vector3(
             transform.position.x, transform.position.y, 0f);
@@ -205,7 +210,7 @@ public class PlayerController : NetworkBehaviour
             ManejarAgacharse(input.Buttons.IsSet(EBtn.CROUCH));
         }
 
-        Animaciones();
+        
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -213,10 +218,24 @@ public class PlayerController : NetworkBehaviour
     // Se ejecuta cada frame (independiente del tick rate)
     // ─────────────────────────────────────────────────────────────────────────
     public override void Render()
+{
+    transform.localScale = new Vector3(facingRight ? 1f : -1f, 1f, 1f);
+
+    if (comboTrigger >= 0 && !triggerConsumed)
     {
-        // Flip del sprite (visual únicamente)
-        transform.localScale = new Vector3(facingRight ? 1f : -1f, 1f, 1f);
+        animator.SetTrigger(comboTrigger.ToString());
+        triggerConsumed = true;
     }
+
+    if (triggerConsumed && comboTrigger >= 0)
+    {
+        comboTrigger    = -1;
+        triggerConsumed = false;
+    }
+
+    Animaciones();
+}
+    
 
     // ─────────────────────────────────────────────────────────────────────────
     // Detección de entorno (mismo código que tenías)
@@ -247,6 +266,7 @@ public class PlayerController : NetworkBehaviour
 
         float velActual = agachado ? velocidadAgachado : velocidad;
         float inputX    = input.MoveX;
+        
 
         // Sonido de pasos
         if (inputX != 0 && enSuelo && !recibiendoDano && !agachado && !atacando && !dasheando)
@@ -260,8 +280,7 @@ public class PlayerController : NetworkBehaviour
             }
         }
 
-        animator.SetFloat("movement", Mathf.Abs(inputX));
-
+        moveInput = Mathf.Abs(inputX);
         // Orientación del personaje
         if      (inputX > 0) facingRight = true;
         else if (inputX < 0) facingRight = false;
@@ -413,8 +432,7 @@ public class PlayerController : NetworkBehaviour
         soundController.PlayAtacar();
         atacando        = true;
         comboRegistrado = false;
-        animator.SetTrigger(comboContador.ToString());
-    }
+        comboTrigger = comboContador;    }
 
     public void IniciarCombo()
     {
@@ -454,6 +472,7 @@ public class PlayerController : NetworkBehaviour
         animator.SetBool("dasheando",     dasheando);
         animator.SetBool("agachado",      agachado);
         animator.SetBool("muerto",        muerto);
+        animator.SetFloat("movement", moveInput);
     }
 
     // ─────────────────────────────────────────────────────────────────────────

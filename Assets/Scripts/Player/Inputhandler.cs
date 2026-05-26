@@ -3,97 +3,47 @@ using Fusion.Sockets;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-// ─────────────────────────────────────────────────────────────────────────────
-// InputHandler: captura los inputs de Unity Input System
-// y los entrega a Fusion cada tick de red.
-//
-// Agregar este componente al mismo GameObject que GameNetworkManager,
-// o al jugador local. Fusion lo llama automáticamente via OnInput().
-// ─────────────────────────────────────────────────────────────────────────────
 public class InputHandler : MonoBehaviour, INetworkRunnerCallbacks
 {
-    // Estado de botones capturado desde los callbacks del Input System
-    // (se acumula entre ticks y se limpia después de entregarlo a Fusion)
-    private float _moveX;
-    private bool  _jumpPending;
-    private bool  _dashPending;
-    private bool  _attackPending;
-    private bool  _crouchHeld;   // held = se mantiene mientras esté presionado
+    private bool _registered = false;
 
-    // ─────────────────────────────────────────────────────────────────
-    // Callbacks del Input System de Unity
-    // (los mismos métodos que tenías en PlayerController)
-    // ─────────────────────────────────────────────────────────────────
-        void Start()
+    void Update()
     {
-        var runner = FindObjectOfType<NetworkRunner>();
-        if (runner != null)
-            runner.AddCallbacks(this);
+        if (!_registered)
+        {
+            var runner = FindObjectOfType<NetworkRunner>();
+            if (runner != null)
+            {
+                runner.AddCallbacks(this);
+                _registered = true;
+                Debug.Log("InputHandler registrado");
+            }
+        }
     }
 
-    void OnDestroy()
-    {
-        var runner = FindObjectOfType<NetworkRunner>();
-        if (runner != null)
-            runner.RemoveCallbacks(this);
-    }
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        _moveX = context.ReadValue<Vector2>().x;
-    }
-
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        if (context.performed) _jumpPending = true;
-    }
-
-    public void OnDash(InputAction.CallbackContext context)
-    {
-        if (context.performed) _dashPending = true;
-    }
-
-    public void OnAttack(InputAction.CallbackContext context)
-    {
-        if (context.performed) _attackPending = true;
-    }
-
-    public void CrouchStarted(InputAction.CallbackContext context)
-    {
-        if (context.started) _crouchHeld = true;
-    }
-
-    public void CrouchCanceled(InputAction.CallbackContext context)
-    {
-        if (context.canceled) _crouchHeld = false;
-    }
-
-    // ─────────────────────────────────────────────────────────────────
-    // OnInput: Fusion llama esto ~60 veces por segundo.
-    // Aquí empaquetamos todo el estado en EclipseraInput
-    // y lo enviamos al servidor.
-    // ─────────────────────────────────────────────────────────────────
     public void OnInput(NetworkRunner runner, NetworkInput input)
-    {
-        var data   = new EclipseraInput();
-        data.MoveX = _moveX;
+{
+    var data = new EclipseraInput();
 
-        var buttons = new NetworkButtons();
-        buttons.Set(EBtn.JUMP,   _jumpPending);
-        buttons.Set(EBtn.DASH,   _dashPending);
-        buttons.Set(EBtn.ATTACK, _attackPending);
-        buttons.Set(EBtn.CROUCH, _crouchHeld);
+    // Usar Keyboard del nuevo Input System
+    var kb = UnityEngine.InputSystem.Keyboard.current;
+    if (kb == null) return;
 
-        data.Buttons = buttons;
-        input.Set(data);
+    data.MoveX = 0f;
+    if (kb.aKey.isPressed || kb.leftArrowKey.isPressed)  data.MoveX = -1f;
+    if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) data.MoveX =  1f;
 
-        _jumpPending   = false;
-        _dashPending   = false;
-        _attackPending = false;
-    }
+    var buttons = new NetworkButtons();
+    buttons.Set(EBtn.JUMP,   kb.spaceKey.isPressed || kb.wKey.isPressed);
+    buttons.Set(EBtn.DASH,   kb.kKey.isPressed);
+    buttons.Set(EBtn.ATTACK, kb.jKey.isPressed);
+    buttons.Set(EBtn.CROUCH, kb.sKey.isPressed || kb.downArrowKey.isPressed);
 
-    // ─── Callbacks vacíos requeridos por INetworkRunnerCallbacks ─────
+    data.Buttons = buttons;
+    input.Set(data);
+}
+
     public void OnPlayerJoined(NetworkRunner r, PlayerRef p) { }
     public void OnPlayerLeft(NetworkRunner r, PlayerRef p) { }
     public void OnShutdown(NetworkRunner r, ShutdownReason reason) { }
@@ -111,4 +61,5 @@ public class InputHandler : MonoBehaviour, INetworkRunnerCallbacks
     public void OnSceneLoadDone(NetworkRunner r) { }
     public void OnSceneLoadStart(NetworkRunner r) { }
     public void OnSessionListUpdated(NetworkRunner r, List<SessionInfo> sessions) { }
-    public void OnUserSimulationMessage(NetworkRunner r, SimulationMessagePtr msg) { }}
+    public void OnUserSimulationMessage(NetworkRunner r, SimulationMessagePtr msg) { }
+}

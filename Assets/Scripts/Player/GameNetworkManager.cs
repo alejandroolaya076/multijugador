@@ -11,8 +11,7 @@ public class GameNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     public static GameNetworkManager Instance { get; private set; }
 
     [Header("Prefabs")]
-    [SerializeField] private NetworkPrefabRef _playerPrefab;
-
+    [SerializeField] private NetworkObject _playerPrefab;
     [Header("Spawn Points")]
     [SerializeField] private Transform[] _spawnPoints;
 
@@ -94,31 +93,40 @@ public class GameNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     // ─── Callbacks de Fusion ─────────────────────────────────────────
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
+{
+    if (!runner.IsServer) return;
+
+    int index = _spawnedPlayers.Count % Mathf.Max(_spawnPoints.Length, 1);
+    Vector3 spawnPos = _spawnPoints.Length > 0
+        ? _spawnPoints[index].position
+        : new Vector3(index == 0 ? -3f : 3f, 0f, 0f);
+
+    Debug.Log($"Spawneando jugador {index} en {spawnPos}");
+
+    if (_playerPrefab == null)
     {
-        if (!runner.IsServer) return;
-
-        int index = _spawnedPlayers.Count % Mathf.Max(_spawnPoints.Length, 1);
-        Vector3 spawnPos = _spawnPoints.Length > 0
-            ? _spawnPoints[index].position
-            : new Vector3(index == 0 ? -3f : 3f, 0f, 0f);
-
-        NetworkObject playerObj = runner.Spawn(
-            _playerPrefab,
-            spawnPos,
-            Quaternion.identity,
-            player
-        );
-
-        // Asignar índice al jugador (0 = P1, 1 = P2)
-        var pc = playerObj.GetComponent<PlayerController>();
-        if (pc != null) pc.PlayerIndex = _spawnedPlayers.Count;
-
-        _spawnedPlayers[player] = playerObj;
-        OnPlayerConnected?.Invoke(player);
-
-        if (_spawnedPlayers.Count >= runner.SessionInfo.MaxPlayers)
-            OnMatchReady?.Invoke();
+        Debug.LogError("Player Prefab no asignado en GameNetworkManager");
+        return;
     }
+
+    NetworkObject playerObj = runner.Spawn(
+        _playerPrefab.gameObject, spawnPos, Quaternion.identity, player);
+
+    if (playerObj == null)
+    {
+        Debug.LogError("Spawn falló, playerObj es null");
+        return;
+    }
+
+    var pc = playerObj.GetComponent<PlayerController>();
+    if (pc != null) pc.PlayerIndex = _spawnedPlayers.Count;
+
+    _spawnedPlayers[player] = playerObj;
+    OnPlayerConnected?.Invoke(player);
+
+    if (_spawnedPlayers.Count >= runner.SessionInfo.MaxPlayers)
+        OnMatchReady?.Invoke();
+}
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
     {

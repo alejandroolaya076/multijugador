@@ -18,21 +18,26 @@ public class EnemyController : MonoBehaviour
     
 
     void Start()
+{
+    playerVivo = true;
+    rb = GetComponent<Rigidbody2D>();
+    animator = GetComponent<Animator>();
+}
+
+void Update()
+{
+    // Buscar el player spawneado por Fusion si aún no lo tenemos
+    if (player == null)
     {
-        playerVivo= true;
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        var pc = FindObjectOfType<PlayerController>();
+        if (pc != null) player = pc.transform;
     }
 
-    void Update()
-    {
-        if(playerVivo && !muerto)
-        {
-            Movimiento();
-        }
+    if (playerVivo && !muerto && player != null)
+        Movimiento();
 
-        Animaciones();
-    }
+    Animaciones();
+}
 
     private void Movimiento()
     {
