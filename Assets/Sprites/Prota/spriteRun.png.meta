@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 2c178d875f0960040ba62c8f277fe374
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8613490572357733049
+    second: sprite-run-prota_0
+  - first:
+      213: -7224543616564963776
+    second: sprite-run-prota_1
+  - first:
+      213: 5224402640047116580
+    second: sprite-run-prota_2
+  - first:
+      213: 8498226853567431073
+    second: sprite-run-prota_3
+  - first:
+      213: -4711743744678134644
+    second: sprite-run-prota_4
+  - first:
+      213: -2819647967724227894
+    second: sprite-run-prota_5
+  - first:
+      213: 4904252141229651816
+    second: sprite-run-prota_6
+  - first:
+      213: -890413023133910951
+    second: sprite-run-prota_7
+  - first:
+      213: 7003020789400860607
+    second: sprite-run-prota_8
+  - first:
+      213: 498278706605873286
+    second: sprite-run-prota_9
+  - first:
+      213: -1154851360830961338
+    second: sprite-run-prota_10
+  - first:
+      213: -8154951413525304276
+    second: sprite-run-prota_11
+  - first:
+      213: -3186013479959807556
+    second: sprite-run-prota_12
+  - first:
+      213: -5807924398042535570
+    second: sprite-run-prota_13
+  - first:
+      213: 6117924243543309205
+    second: sprite-run-prota_14
+  - first:
+      213: 2181219753772945106
+    second: sprite-run-prota_15
+  - first:
+      213: -6131737702198063252
+    second: sprite-run-prota_16
+  - first:
+      213: -640691449920724154
+    second: sprite-run-prota_17
+  - first:
+      213: -677818950453148099
+    second: sprite-run-prota_18
+  - first:
+      213: -5534004048092571730
+    second: sprite-run-prota_19
+  - first:
+      213: 6506660684953104604
+    second: sprite-run-prota_20
+  - first:
+      213: -4367771984123194597
+    second: sprite-run-prota_21
+  - first:
+      213: 4896275484582741868
+    second: sprite-run-prota_22
+  - first:
+      213: 5547517496231273734
+    second: sprite-run-prota_23
+  - first:
+      213: 71112384379580079
+    second: sprite-run-prota_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-run-prota_0
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2823
+        width: 127
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba0f811a04498770800000000000000
+      internalID: 8613490572357733049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_1
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 2823
+        width: 116
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0465456abd34dbb90800000000000000
+      internalID: -7224543616564963776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_2
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 2823
+        width: 110
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4211f93658ec08840800000000000000
+      internalID: 5224402640047116580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_3
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 2823
+        width: 106
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1829b3c44cfe570800000000000000
+      internalID: 8498226853567431073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2375
+        width: 101
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c7ac137068c9eb0800000000000000
+      internalID: -4711743744678134644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_5
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 2375
+        width: 99
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2352ccc199ed8d0800000000000000
+      internalID: -2819647967724227894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_6
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 2375
+        width: 107
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86731fea6576f0440800000000000000
+      internalID: 4904252141229651816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_7
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 2375
+        width: 115
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958b8b4b21e94a3f0800000000000000
+      internalID: -890413023133910951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1929
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7f9eaed4abf2160800000000000000
+      internalID: 7003020789400860607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_9
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1936
+        width: 129
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688526af7dd3ae600800000000000000
+      internalID: 498278706605873286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_10
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1943
+        width: 146
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6494b455ec429ffe0800000000000000
+      internalID: -1154851360830961338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_11
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 1938
+        width: 154
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c214c65eac3de80800000000000000
+      internalID: -8154951413525304276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_12
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1483
+        width: 156
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9b365ce9109c3d0800000000000000
+      internalID: -3186013479959807556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_13
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1481
+        width: 148
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69a95c188b166fa0800000000000000
+      internalID: -5807924398042535570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_14
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1482
+        width: 153
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b36237fab37e450800000000000000
+      internalID: 6117924243543309205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_15
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 1482
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de83b83fcf354e10800000000000000
+      internalID: 2181219753772945106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1035
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f4d941c01b7eaa0800000000000000
+      internalID: -6131737702198063252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_17
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1035
+        width: 131
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64368d4558ecb17f0800000000000000
+      internalID: -640691449920724154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_18
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1040
+        width: 128
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36463c7147e796f0800000000000000
+      internalID: -677818950453148099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_19
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 1045
+        width: 135
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea75edf73a44333b0800000000000000
+      internalID: -5534004048092571730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 595
+        width: 140
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd031a05b6d4c4a50800000000000000
+      internalID: 6506660684953104604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_21
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 589
+        width: 149
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b131f6a958e8263c0800000000000000
+      internalID: -4367771984123194597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_22
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 583
+        width: 151
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6702059c9013f340800000000000000
+      internalID: 4896275484582741868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_23
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 582
+        width: 156
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605212455cdbcfc40800000000000000
+      internalID: 5547517496231273734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-run-prota_24
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 134
+        width: 162
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae631a3654acf000800000000000000
+      internalID: 71112384379580079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-run-prota_0: 8613490572357733049
+      sprite-run-prota_1: -7224543616564963776
+      sprite-run-prota_10: -1154851360830961338
+      sprite-run-prota_11: -8154951413525304276
+      sprite-run-prota_12: -3186013479959807556
+      sprite-run-prota_13: -5807924398042535570
+      sprite-run-prota_14: 6117924243543309205
+      sprite-run-prota_15: 2181219753772945106
+      sprite-run-prota_16: -6131737702198063252
+      sprite-run-prota_17: -640691449920724154
+      sprite-run-prota_18: -677818950453148099
+      sprite-run-prota_19: -5534004048092571730
+      sprite-run-prota_2: 5224402640047116580
+      sprite-run-prota_20: 6506660684953104604
+      sprite-run-prota_21: -4367771984123194597
+      sprite-run-prota_22: 4896275484582741868
+      sprite-run-prota_23: 5547517496231273734
+      sprite-run-prota_24: 71112384379580079
+      sprite-run-prota_3: 8498226853567431073
+      sprite-run-prota_4: -4711743744678134644
+      sprite-run-prota_5: -2819647967724227894
+      sprite-run-prota_6: 4904252141229651816
+      sprite-run-prota_7: -890413023133910951
+      sprite-run-prota_8: 7003020789400860607
+      sprite-run-prota_9: 498278706605873286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

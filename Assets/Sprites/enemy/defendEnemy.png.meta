@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 294018103dda83f46bb6e6da2cfc9b25
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7002301233418054937
+    second: defendEnemy_0
+  - first:
+      213: -3037250217580887946
+    second: defendEnemy_1
+  - first:
+      213: -5421620500540516283
+    second: defendEnemy_2
+  - first:
+      213: 6334963765046138816
+    second: defendEnemy_3
+  - first:
+      213: 6704428855340904722
+    second: defendEnemy_4
+  - first:
+      213: 35783913230865732
+    second: defendEnemy_5
+  - first:
+      213: 3927299143565620043
+    second: defendEnemy_6
+  - first:
+      213: -2773523989706276099
+    second: defendEnemy_7
+  - first:
+      213: 471731881924314289
+    second: defendEnemy_8
+  - first:
+      213: -8850279906153887337
+    second: defendEnemy_9
+  - first:
+      213: -899237535340627035
+    second: defendEnemy_10
+  - first:
+      213: -8343235577558972016
+    second: defendEnemy_11
+  - first:
+      213: -6552515145535323987
+    second: defendEnemy_12
+  - first:
+      213: -8093664204381117236
+    second: defendEnemy_13
+  - first:
+      213: 9206663570771346186
+    second: defendEnemy_14
+  - first:
+      213: 4512715207019959305
+    second: defendEnemy_15
+  - first:
+      213: 5773771256666827989
+    second: defendEnemy_16
+  - first:
+      213: -756203236069028244
+    second: defendEnemy_17
+  - first:
+      213: 2488102812057132950
+    second: defendEnemy_18
+  - first:
+      213: -2615925574441533557
+    second: defendEnemy_19
+  - first:
+      213: -467285180599082626
+    second: defendEnemy_20
+  - first:
+      213: -6391737328066944656
+    second: defendEnemy_21
+  - first:
+      213: -651591498396024720
+    second: defendEnemy_22
+  - first:
+      213: -5317873762899552888
+    second: defendEnemy_23
+  - first:
+      213: 3290778912126905719
+    second: defendEnemy_24
+  - first:
+      213: 6394495475042576285
+    second: defendEnemy_25
+  - first:
+      213: 5460932404383261493
+    second: defendEnemy_26
+  - first:
+      213: -4309328396167419392
+    second: defendEnemy_27
+  - first:
+      213: -3086656583370890673
+    second: defendEnemy_28
+  - first:
+      213: -7667117256286791405
+    second: defendEnemy_29
+  - first:
+      213: -726908954742446625
+    second: defendEnemy_30
+  - first:
+      213: -5710653940463403638
+    second: defendEnemy_31
+  - first:
+      213: 6022990764888579761
+    second: defendEnemy_32
+  - first:
+      213: 3403344549585077627
+    second: defendEnemy_33
+  - first:
+      213: 6110763886447349271
+    second: defendEnemy_34
+  - first:
+      213: -8761767367043373033
+    second: defendEnemy_35
+  - first:
+      213: -8506726188898974908
+    second: defendEnemy_36
+  - first:
+      213: -1613735712076705133
+    second: defendEnemy_37
+  - first:
+      213: 1871457914606330788
+    second: defendEnemy_38
+  - first:
+      213: -1338926948890669084
+    second: defendEnemy_39
+  - first:
+      213: -4297444245055033074
+    second: defendEnemy_40
+  - first:
+      213: -6097011636905939702
+    second: defendEnemy_41
+  - first:
+      213: 2325662289125153705
+    second: defendEnemy_42
+  - first:
+      213: -1875901668785405753
+    second: defendEnemy_43
+  - first:
+      213: 8140413485650150639
+    second: defendEnemy_44
+  - first:
+      213: -8349406709834341058
+    second: defendEnemy_45
+  - first:
+      213: -1050671706272008739
+    second: defendEnemy_46
+  - first:
+      213: 7823142199833432127
+    second: defendEnemy_47
+  - first:
+      213: 6468267904567752586
+    second: defendEnemy_48
+  - first:
+      213: 1143133274724228637
+    second: defendEnemy_49
+  - first:
+      213: 8714514918660824369
+    second: defendEnemy_50
+  - first:
+      213: 4173673367853822370
+    second: defendEnemy_51
+  - first:
+      213: -7075969096420291074
+    second: defendEnemy_52
+  - first:
+      213: 4817958191404896528
+    second: defendEnemy_53
+  - first:
+      213: -6309057320657467595
+    second: defendEnemy_54
+  - first:
+      213: 5153628108836016379
+    second: defendEnemy_55
+  - first:
+      213: 5513492511854452367
+    second: defendEnemy_56
+  - first:
+      213: 1760084235613551104
+    second: defendEnemy_57
+  - first:
+      213: -364958164161718318
+    second: defendEnemy_58
+  - first:
+      213: 1192249470361620909
+    second: defendEnemy_59
+  - first:
+      213: -1595010218658263463
+    second: defendEnemy_60
+  - first:
+      213: -8355401880868038694
+    second: defendEnemy_61
+  - first:
+      213: 5835868842749005930
+    second: defendEnemy_62
+  - first:
+      213: 8612495330509075106
+    second: defendEnemy_63
+  - first:
+      213: -1387529016438406695
+    second: defendEnemy_64
+  - first:
+      213: -2357950720061933296
+    second: defendEnemy_65
+  - first:
+      213: 230580709380087087
+    second: defendEnemy_66
+  - first:
+      213: -3322730052807006093
+    second: defendEnemy_67
+  - first:
+      213: 3866559134018858884
+    second: defendEnemy_68
+  - first:
+      213: -6799273436721191377
+    second: defendEnemy_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 280
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defendEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e256d3c024d2de90800000000000000
+      internalID: -7002301233418054937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6700d17e40589d5d0800000000000000
+      internalID: -3037250217580887946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5489e4631e882c4b0800000000000000
+      internalID: -5421620500540516283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7db80faff4ae750800000000000000
+      internalID: 6334963765046138816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2113978b58aea0d50800000000000000
+      internalID: 6704428855340904722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1067
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4459ccc87412f7000800000000000000
+      internalID: 35783913230865732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43bcea63c1908630800000000000000
+      internalID: 3927299143565620043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2888940a67289d0800000000000000
+      internalID: -2773523989706276099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b44353b5adeb8600800000000000000
+      internalID: 471731881924314289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7998beee05d7d2580800000000000000
+      internalID: -8850279906153887337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_10
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abf259d9344583f0800000000000000
+      internalID: -899237535340627035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 854
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0994232527fd63c80800000000000000
+      internalID: -8343235577558972016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0000d113ac015a0800000000000000
+      internalID: -6552515145535323987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4a196c9478daf80800000000000000
+      internalID: -8093664204381117236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_14
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a030b561db3a4cf70800000000000000
+      internalID: 9206663570771346186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9049de6429260ae30800000000000000
+      internalID: 4512715207019959305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_16
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcacfffd5e802050800000000000000
+      internalID: 5773771256666827989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_17
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 641
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6eca10d92d6185f0800000000000000
+      internalID: -756203236069028244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fd0553354878220800000000000000
+      internalID: 2488102812057132950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f7d80cc8d52bbd0800000000000000
+      internalID: -2615925574441533557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e716691aa9ed389f0800000000000000
+      internalID: -467285180599082626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_21
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07127f6d3ccfb47a0800000000000000
+      internalID: -6391737328066944656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070c0770cf415f6f0800000000000000
+      internalID: -651591498396024720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_23
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 428
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885900aecfd1336b0800000000000000
+      internalID: -5317873762899552888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dabab3cf13bad20800000000000000
+      internalID: 3290778912126905719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9761cb41cfcdb850800000000000000
+      internalID: 6394495475042576285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5332fa9a61129cb40800000000000000
+      internalID: 5460932404383261493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_27
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aefedc7a03234c0800000000000000
+      internalID: -4309328396167419392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_28
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42ae84f03ef925d0800000000000000
+      internalID: -3086656583370890673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_29
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 215
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31912cf3a7de89590800000000000000
+      internalID: -7667117256286791405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5a680382089e5f0800000000000000
+      internalID: -726908954742446625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_31
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d7e7b5f7eafb0b0800000000000000
+      internalID: -5710653940463403638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be54a28036f59350800000000000000
+      internalID: 6022990764888579761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_33
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75c74e06db1b3f20800000000000000
+      internalID: 3403344549585077627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_34
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ecaf5e06bcdc450800000000000000
+      internalID: 6110763886447349271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defendEnemy_35
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 2
+        width: 181
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71825c26003f76680800000000000000
+      internalID: -8761767367043373033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eb218fc84e5e71d4cba677fb4a4c7738
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":181.0,"y":213.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      defendEnemy_0: -7002301233418054937
+      defendEnemy_1: -3037250217580887946
+      defendEnemy_10: -899237535340627035
+      defendEnemy_11: -8343235577558972016
+      defendEnemy_12: -6552515145535323987
+      defendEnemy_13: -8093664204381117236
+      defendEnemy_14: 9206663570771346186
+      defendEnemy_15: 4512715207019959305
+      defendEnemy_16: 5773771256666827989
+      defendEnemy_17: -756203236069028244
+      defendEnemy_18: 2488102812057132950
+      defendEnemy_19: -2615925574441533557
+      defendEnemy_2: -5421620500540516283
+      defendEnemy_20: -467285180599082626
+      defendEnemy_21: -6391737328066944656
+      defendEnemy_22: -651591498396024720
+      defendEnemy_23: -5317873762899552888
+      defendEnemy_24: 3290778912126905719
+      defendEnemy_25: 6394495475042576285
+      defendEnemy_26: 5460932404383261493
+      defendEnemy_27: -4309328396167419392
+      defendEnemy_28: -3086656583370890673
+      defendEnemy_29: -7667117256286791405
+      defendEnemy_3: 6334963765046138816
+      defendEnemy_30: -726908954742446625
+      defendEnemy_31: -5710653940463403638
+      defendEnemy_32: 6022990764888579761
+      defendEnemy_33: 3403344549585077627
+      defendEnemy_34: 6110763886447349271
+      defendEnemy_35: -8761767367043373033
+      defendEnemy_4: 6704428855340904722
+      defendEnemy_5: 35783913230865732
+      defendEnemy_6: 3927299143565620043
+      defendEnemy_7: -2773523989706276099
+      defendEnemy_8: 471731881924314289
+      defendEnemy_9: -8850279906153887337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
