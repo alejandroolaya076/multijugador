@@ -73,17 +73,21 @@ public class HUDMultijugador : MonoBehaviour
     // ── Buscar jugadores spawneados por Fusion ────────────────────────
 
     private void BuscarJugadores()
+{
+    var jugadores = FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
+    Debug.Log($"Total jugadores encontrados: {jugadores.Length}");
+    foreach (var j in jugadores)
     {
-        if (_p1 != null && _p2 != null) return;
-
-        var jugadores = FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
-        foreach (var j in jugadores)
+        if (j.Object == null || !j.Object.IsValid)
         {
-            if (j.Object == null || !j.Object.IsValid) continue;
-            if (j.PlayerIndex == 0) _p1 = j;
-            if (j.PlayerIndex == 1) _p2 = j;
+            Debug.Log($"Jugador inválido: {j.gameObject.name}");
+            continue;
         }
+        Debug.Log($"Jugador válido: PlayerIndex={j.PlayerIndex}");
+        if (j.PlayerIndex == 0) _p1 = j;
+        if (j.PlayerIndex == 1) _p2 = j;
     }
+}
 
     // ── Barras de vida ────────────────────────────────────────────────
 
@@ -96,11 +100,13 @@ public class HUDMultijugador : MonoBehaviour
     private void ActualizarBarra(PlayerController jugador, Image relleno)
     {
         if (jugador == null || relleno == null) return;
+        Debug.Log($"Actualizando barra P{jugador.PlayerIndex}: vida={jugador.vida}/{jugador.vidaMaxima}");
 
         float pct = jugador.vidaMaxima > 0
             ? (float)jugador.vida / jugador.vidaMaxima
             : 0f;
-
+        Debug.Log($"P{jugador.PlayerIndex}: vida={jugador.vida}/{jugador.vidaMaxima} pct={pct} fillAmount={relleno.fillAmount}");
+    
         relleno.fillAmount = Mathf.Clamp01(pct);
 
         if      (pct > 0.5f)  relleno.color = _colorAlto;

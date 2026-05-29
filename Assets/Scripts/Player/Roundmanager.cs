@@ -187,15 +187,17 @@ public class RoundManager : NetworkBehaviour
         {
             if (!j.Object.HasStateAuthority) continue;
 
-            // Resetear vida
-            j.vida   = j.vidaMaxima;
-            j.muerto = false;
+            j.vida    = j.vidaMaxima;
+            j.muerto  = false;
 
-            // Resetear posición a los spawn points
+            // Resetear posición
             if (j.PlayerIndex == 0 && _spawnP1 != null)
                 j.transform.position = _spawnP1.position;
             else if (j.PlayerIndex == 1 && _spawnP2 != null)
                 j.transform.position = _spawnP2.position;
+
+            // Notificar reset visual a todos
+            j.RPC_ResetearEstado();
         }
     }
 

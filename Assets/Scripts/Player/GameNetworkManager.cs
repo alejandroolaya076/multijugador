@@ -96,32 +96,27 @@ public class GameNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 {
     if (!runner.IsServer) return;
 
-    int index = _spawnedPlayers.Count % Mathf.Max(_spawnPoints.Length, 1);
-    Vector3 spawnPos = _spawnPoints.Length > 0
+    int index = _spawnedPlayers.Count; // ← guarda el índice ANTES de agregar
+    
+    Vector3 spawnPos = _spawnPoints.Length > index
         ? _spawnPoints[index].position
         : new Vector3(index == 0 ? -3f : 3f, 0f, 0f);
 
     Debug.Log($"Spawneando jugador {index} en {spawnPos}");
 
-    if (_playerPrefab == null)
-    {
-        Debug.LogError("Player Prefab no asignado en GameNetworkManager");
-        return;
-    }
-
     NetworkObject playerObj = runner.Spawn(
         _playerPrefab.gameObject, spawnPos, Quaternion.identity, player);
 
-    if (playerObj == null)
-    {
-        Debug.LogError("Spawn falló, playerObj es null");
-        return;
-    }
+    if (playerObj == null) { Debug.LogError("Spawn falló"); return; }
 
     var pc = playerObj.GetComponent<PlayerController>();
-    if (pc != null) pc.PlayerIndex = _spawnedPlayers.Count;
+    if (pc != null)
+    {
+        pc.PlayerIndex = index; // ← usa el índice guardado antes
+        Debug.Log($"PlayerIndex asignado: {pc.PlayerIndex}");
+    }
 
-    _spawnedPlayers[player] = playerObj;
+    _spawnedPlayers[player] = playerObj; // ← agrega AL FINAL
     OnPlayerConnected?.Invoke(player);
 
     if (_spawnedPlayers.Count >= runner.SessionInfo.MaxPlayers)

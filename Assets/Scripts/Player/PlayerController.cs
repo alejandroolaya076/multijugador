@@ -32,6 +32,8 @@ public class PlayerController : NetworkBehaviour
     public bool  step1        = false;
     public float timeByStep   = 0.5f;
     float cont = 0f;
+    // Variable LOCAL para animación (no networked)
+    private float _localMoveInput = 0f;
 
     [Header("Salto")]
     public float fuerzaSalto  = 10f;
@@ -81,6 +83,9 @@ public class PlayerController : NetworkBehaviour
     public BoxCollider2D     col;
     public LayerMask         capaSuelo;
     public PlayerSoundController soundController;
+
+    [Header("Hitbox")]
+    public AttackHitbox hitbox;
 
     // ── Variables sincronizadas con rollback ─────────────────────────────────
     // Fusion restaura estas variables automáticamente si hay rollback
@@ -209,6 +214,8 @@ public class PlayerController : NetworkBehaviour
             // Agacharse
             ManejarAgacharse(input.Buttons.IsSet(EBtn.CROUCH));
         }
+        hitbox = GetComponentInChildren<AttackHitbox>();
+        
 
         
     }
@@ -233,7 +240,30 @@ public class PlayerController : NetworkBehaviour
         triggerConsumed = false;
     }
 
-    Animaciones();
+    // Leer input local para animación fluida
+    if (Object.HasInputAuthority)
+    {
+        var kb = UnityEngine.InputSystem.Keyboard.current;
+        if (kb != null)
+        {
+            _localMoveInput = 0f;
+            if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) _localMoveInput = 1f;
+            if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) _localMoveInput = 1f;
+        }
+        animator.SetFloat("movement", _localMoveInput);
+    }
+    else
+    {
+        animator.SetFloat("movement", moveInput);
+    }
+
+    // Animaciones sin el SetFloat de movement
+    animator.SetBool("ensuelo",        enSuelo);
+    animator.SetBool("atacando",       atacando);
+    animator.SetBool("recibiendoDano", recibiendoDano);
+    animator.SetBool("dasheando",      dasheando);
+    animator.SetBool("agachado",       agachado);
+    animator.SetBool("muerto",         muerto);
 }
     
 
@@ -329,8 +359,10 @@ public class PlayerController : NetworkBehaviour
         if (!Object.HasStateAuthority) return;
         if (recibiendoDano) return;
 
+        Debug.Log($"RecibeDano aplicado, vida antes: {vida}, daño: {cantDano}");
         recibiendoDano = true;
         vida -= cantDano;
+        Debug.Log($"Vida después: {vida}");
 
         if (vida <= 0)
         {
@@ -352,8 +384,27 @@ public class PlayerController : NetworkBehaviour
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_NotificarMuerte()
     {
-        // RoundManager.Instance?.OnPlayerDied(Object.InputAuthority);
+    RoundManager.Instance?.OnPlayerDied(Object.InputAuthority);
     Debug.Log($"Jugador {Object.InputAuthority} murió");
+    }
+
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+public void RPC_RecibirDano(Vector2 direccion, int cantDano)
+{
+    Debug.Log($"RPC_RecibirDano recibido, vida actual: {vida}");
+    RecibeDano(direccion, cantDano);
+}
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RPC_ResetearEstado()
+    {
+        muerto          = false;
+        recibiendoDano  = false;
+        atacando        = false;
+        dasheando       = false;
+        agachado        = false;
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale   = 1f;
+        animator.Play("idle1");
     }
 
     private IEnumerator RecuperarseDeDano()
@@ -472,7 +523,6 @@ public class PlayerController : NetworkBehaviour
         animator.SetBool("dasheando",     dasheando);
         animator.SetBool("agachado",      agachado);
         animator.SetBool("muerto",        muerto);
-        animator.SetFloat("movement", moveInput);
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -497,4 +547,13 @@ public class PlayerController : NetworkBehaviour
     Gizmos.color = tocandoPared ? Color.blue : Color.cyan;
     Gizmos.DrawWireCube(puntoPared, tamañoDetectorPared);
     }
+    public void ActivarHitbox()
+{
+    hitbox?.ActivarHitbox();
+}
+
+public void DesactivarHitbox()
+{
+    hitbox?.DesactivarHitbox();
+}
 }
