@@ -1147,7 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddda80cde56d1444bb0551d608062217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamaraController
-  objetivo: {fileID: 0}
   velocidadCamara: 0.025
   desplazamiento: {x: 0, y: 0, z: -10}
 --- !u!1 &543900034
@@ -1470,7 +1469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugador1
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: caf7ab4643ddbd544a9c47c8ef844e38, type: 2}
   m_sharedMaterial: {fileID: -1695011039700643927, guid: caf7ab4643ddbd544a9c47c8ef844e38, type: 2}
@@ -1479,8 +1478,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1497,10 +1496,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1559,15 +1558,15 @@ RectTransform:
   m_GameObject: {fileID: 783859237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.7169812, y: 2.7169812, z: 2.7169812}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1180624086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.03998, y: 1038.44}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -646, y: 427.32}
+  m_SizeDelta: {x: 250, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &806984506
 GameObject:
@@ -1808,7 +1807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugador2
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: caf7ab4643ddbd544a9c47c8ef844e38, type: 2}
   m_sharedMaterial: {fileID: -1695011039700643927, guid: caf7ab4643ddbd544a9c47c8ef844e38, type: 2}
@@ -1818,7 +1817,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4292699185
-  m_fontColor: {r: 0.19241722, g: 0.39154544, b: 0.8679245, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1835,10 +1834,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1897,15 +1896,15 @@ RectTransform:
   m_GameObject: {fileID: 942709547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.7169812, y: 2.7169812, z: 2.7169812}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1180624086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1706.96, y: 1038.44}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 651, y: 427.32}
+  m_SizeDelta: {x: 250, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &955334929
 GameObject:
@@ -2369,6 +2368,8 @@ RectTransform:
   - {fileID: 1164325594}
   - {fileID: 1357752009}
   - {fileID: 1361910523}
+  - {fileID: 783859240}
+  - {fileID: 942709550}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3094,8 +3095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 87}
-  m_SizeDelta: {x: 997.4489, y: 114.1616}
+  m_AnchoredPosition: {x: -25.613, y: 25.103}
+  m_SizeDelta: {x: 713.18, y: 237.954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1361910521
 GameObject:
@@ -3193,7 +3194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.0032043, y: 0.00018311}
+  m_AnchoredPosition: {x: -0.0032043, y: -0.000017166}
   m_SizeDelta: {x: 471.76, y: 42.857}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1390634006
@@ -3269,7 +3270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104.04, y: -66.562}
+  m_AnchoredPosition: {x: 106.04, y: -66.562}
   m_SizeDelta: {x: 471.7568, y: 42.8568}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1452842252
@@ -3341,9 +3342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2015ebc016e734f877a710e5e3c707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoConnect
-  isHost: 1
-  roomName: EclipseraTest
-  maxPlayers: 2
 --- !u!114 &1596842382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4470,7 +4468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4726,5 +4724,3 @@ SceneRoots:
   - {fileID: 648440805}
   - {fileID: 1607128541}
   - {fileID: 1080150967}
-  - {fileID: 783859240}
-  - {fileID: 942709550}

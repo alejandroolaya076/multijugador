@@ -1,6 +1,7 @@
 using Fusion;
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // RoundManager: controla el flujo de rondas al estilo Street Fighter
@@ -44,10 +45,22 @@ public class RoundManager : NetworkBehaviour
     }
 
     public override void Spawned()
-    {
-        if (!Object.HasStateAuthority) return;
-        IniciarRonda();
-    }
+{
+    if (!Object.HasStateAuthority) return;
+    StartCoroutine(EsperarJugadores());
+}
+
+private IEnumerator EsperarJugadores()
+{
+    RPC_MostrarMensaje("Esperando jugadores...", 99f);
+    
+    // Espera hasta que haya exactamente 2 jugadores conectados
+    while (Runner.ActivePlayers.Count() < 2)
+        yield return new WaitForSeconds(0.5f);
+
+    RPC_MostrarMensaje("", 0f); // limpia el mensaje
+    IniciarRonda();
+}
 
     // ── Tick de red ───────────────────────────────────────────────────
     public override void FixedUpdateNetwork()

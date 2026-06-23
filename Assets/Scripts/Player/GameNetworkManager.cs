@@ -36,7 +36,12 @@ public class GameNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     }
 
     // ─── Métodos públicos ────────────────────────────────────────────
-
+    public void SetRunner(NetworkRunner runner)
+    {
+        _runner = runner;
+        _runner.AddCallbacks(this);
+        Debug.Log("Runner externo asignado a GameNetworkManager");
+    }
     public async Task HostGame(string roomName, int maxPlayers = 2)
     {
         await StartFusion(GameMode.Host, roomName, maxPlayers);

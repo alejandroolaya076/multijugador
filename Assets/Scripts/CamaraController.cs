@@ -1,33 +1,45 @@
 using UnityEngine;
+using Fusion;
 
 public class CamaraController : MonoBehaviour
 {
-    public Transform objetivo;
     public float velocidadCamara = 0.025f;
     public Vector3 desplazamiento;
 
+    private Transform objetivo;
+
     void Update()
     {
-        // Buscar el player spawneado por Fusion si aún no lo tenemos
         if (objetivo == null)
         {
-            var pc = FindObjectOfType<PlayerController>();
-            if (pc != null) objetivo = pc.transform;
+            // Busca SOLO el jugador local (el que tiene input authority)
+            foreach (var pc in FindObjectsByType<PlayerController>(FindObjectsSortMode.None))
+            {
+                if (pc.Object != null && pc.Object.HasInputAuthority)
+                {
+                    objetivo = pc.transform;
+                    break;
+                }
+            }
         }
     }
 
     private void LateUpdate()
-    {
-        if (objetivo == null) return;
+{
+    if (objetivo == null) return;
 
-        Vector3 posicionDeseada = new Vector3(
-            objetivo.position.x + desplazamiento.x,
-            objetivo.position.y + desplazamiento.y,
-            desplazamiento.z
-        );
+    // Usar rb.position en lugar de transform.position
+    // para leer la posición física real sin el jitter de Unity
+    Rigidbody2D rbObjetivo = objetivo.GetComponent<Rigidbody2D>();
+    Vector2 posFisica = rbObjetivo != null ? rbObjetivo.position : (Vector2)objetivo.position;
 
-        Vector3 posicionSuavizada = Vector3.Lerp(
-            transform.position, posicionDeseada, velocidadCamara);
-        transform.position = posicionSuavizada;
-    }
+    Vector3 posicionDeseada = new Vector3(
+        posFisica.x + desplazamiento.x,
+        posFisica.y + desplazamiento.y,
+        desplazamiento.z
+    );
+
+    transform.position = Vector3.Lerp(
+        transform.position, posicionDeseada, velocidadCamara);
+}
 }
